@@ -4,18 +4,21 @@
     justify-content: space-between;
     margin: 20px 70px;
 }
-.nav-menu{
+.nav-menu {
     display: flex;
     align-items: center;
     gap: 60px;
     list-style: none;
     font-size: 20px;
+   
 
 }
+
+
 .nav-connect{
     padding: 20px 40px;
     border-radius: 40px;
-    background-color: blueviolet;
+    background: linear-gradient(267deg, #DF8908 0.36%, #B415FF 100%);
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
@@ -27,4 +30,66 @@
     transform: scale(0.95);
     background-color: #e1ce23;
 }
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.nav-menu li img{
+    display: flex;
+    margin: auto;
+}
+.anchor-link{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-mob-close{
+    display: none;
+}
+.nav-mob-open{
+    display: none;
+}
 
+@media (max-width: 768px) {
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+   
+    }
+    .nav-mob-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1f0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: rift 0.5s;
+        right: -350px;
+
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+}
