@@ -1,23 +1,224 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-  <head>
-      <meta charset="UTF-8" />
-      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Anurag Bishnoi | Java Full Stack Developer</title>
-    <meta name="description" content="Anurag Bishnoi - Java Backend & Full Stack Developer based in Toronto, Canada. 5+ years of experience building scalable web applications with Spring Boot, React, and cloud technologies." />
-    <meta name="keywords" content="Anurag Bishnoi, Java Developer, Full Stack Developer, Spring Boot, React, Toronto, SDE" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
-  </head>
-
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Anurag Bishnoi | Java Developer</title>
+<meta name="description" content="Anurag Bishnoi - Software Engineer, Java Spring Boot, GenAI, Banking Systems. Toronto Canada."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f14;--bg2:#13161e;--bg3:#1a1e2a;--gold:#c9a84c;--gl:#e8c97a;--tx:#e8eaf0;--mu:#8892a4;--br:rgba(201,168,76,0.15);--cd:#161924}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 4rem;background:rgba(13,15,20,0.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--br)}
+.nl{font-family:'DM Serif Display',serif;font-size:1.3rem;color:var(--gold);text-decoration:none}
+.nm{display:flex;gap:2rem;list-style:none}.nm a{color:var(--mu);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .2s}.nm a:hover{color:var(--gold)}
+.nc{background:var(--gold)!important;color:var(--bg)!important;padding:.38rem 1rem;border-radius:4px;font-weight:600!important}
+.hero{min-height:100vh;display:flex;align-items:center;padding:7rem 4rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 70% 40%,rgba(37,99,235,.07) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 20% 70%,rgba(201,168,76,.05) 0%,transparent 60%)}
+.hi{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 400px;gap:4rem;align-items:center;position:relative}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);color:var(--gold);font-size:.72rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:.28rem .8rem;border-radius:100px;margin-bottom:1.2rem;animation:fu .6s ease both}
+.badge span{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pu 2s infinite}
+h1{font-family:'DM Serif Display',serif;font-size:clamp(2.5rem,5vw,3.7rem);line-height:1.1;margin-bottom:.5rem;animation:fu .6s .1s ease both}
+h1 em{font-style:italic;color:var(--gold)}
+.sub{font-size:.93rem;color:var(--mu);margin-bottom:1.4rem;animation:fu .6s .2s ease both}
+.dsc{font-size:.93rem;color:var(--mu);line-height:1.8;margin-bottom:1.8rem;max-width:470px;animation:fu .6s .3s ease both}
+.act{display:flex;gap:1rem;flex-wrap:wrap;animation:fu .6s .4s ease both}
+.bp{background:var(--gold);color:var(--bg);padding:.65rem 1.5rem;border-radius:4px;font-weight:600;font-size:.875rem;text-decoration:none;transition:all .2s}
+.bp:hover{background:var(--gl);transform:translateY(-1px);box-shadow:0 8px 24px rgba(201,168,76,.25)}
+.bs{background:transparent;color:var(--tx);padding:.65rem 1.5rem;border-radius:4px;font-weight:500;font-size:.875rem;text-decoration:none;border:1px solid rgba(255,255,255,.15);transition:all .2s}
+.bs:hover{border-color:var(--gold);color:var(--gold)}
+.hl{display:flex;gap:1.2rem;margin-top:1.5rem;flex-wrap:wrap;animation:fu .6s .5s ease both}
+.hl a{color:var(--mu);text-decoration:none;font-size:.8rem;display:flex;align-items:center;gap:.3rem;transition:color .2s}.hl a:hover{color:var(--gold)}
+.pw{position:relative;animation:fu .6s .3s ease both}
+.pc{background:var(--cd);border:1px solid var(--br);border-radius:18px;overflow:hidden;position:relative}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),transparent);z-index:1}
+.pc img{width:100%;height:400px;object-fit:cover;object-position:top;display:block}
+.po{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(13,15,20,.95));padding:1.4rem}
+.pn{font-family:'DM Serif Display',serif;font-size:1.1rem}.pr{font-size:.75rem;color:var(--gold);margin-top:.15rem}
+.sr{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:.7rem}
+.st{background:var(--bg3);border:1px solid var(--br);border-radius:10px;padding:.85rem 1rem}
+.sv{font-family:'DM Serif Display',serif;font-size:1.55rem;color:var(--gold)}.sl{font-size:.7rem;color:var(--mu);margin-top:.1rem}
+section{padding:4.5rem 4rem}.si{max-width:1200px;margin:0 auto}
+.stg{font-size:.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+h2{font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--tx);margin-bottom:.7rem}
+.sd{width:38px;height:2px;background:var(--gold);margin-bottom:2.2rem}
+#about{background:var(--bg2)}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.at p{color:var(--mu);font-size:.91rem;line-height:1.85;margin-bottom:1rem}
+.aq{background:var(--cd);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:.85rem 1rem;margin:1.1rem 0;font-size:.87rem;color:var(--tx);font-style:italic}
+.sg{margin-bottom:1.4rem}.sgl{font-size:.68rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--mu);margin-bottom:.45rem}
+.sc{display:flex;flex-wrap:wrap;gap:.35rem}
+.ch{background:var(--bg3);border:1px solid rgba(255,255,255,.07);color:var(--tx);font-size:.76rem;padding:.25rem .7rem;border-radius:6px;transition:all .2s;cursor:default}
+.ch:hover{border-color:var(--gold);color:var(--gold)}
+#experience{background:var(--bg)}
+.tl{position:relative}.tl::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--gold),transparent)}
+.ti{padding-left:2rem;padding-bottom:2.2rem;position:relative}
+.ti::before{content:'';position:absolute;left:-4px;top:4px;width:9px;height:9px;background:var(--gold);border-radius:50%;border:2px solid var(--bg)}
+.tt{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem;margin-bottom:.2rem}
+.tc{font-weight:700;font-size:.93rem}
+.td{font-size:.72rem;color:var(--mu);background:var(--bg3);padding:.15rem .6rem;border-radius:100px;border:1px solid var(--br)}
+.tr{font-size:.83rem;color:var(--gold);font-style:italic;margin-bottom:.7rem}
+.tb{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+.tb li{font-size:.83rem;color:var(--mu);padding-left:1rem;position:relative;line-height:1.65}
+.tb li::before{content:'▸';position:absolute;left:0;color:var(--gold);font-size:.65rem;top:3px}
+#projects{background:var(--bg2)}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem}
+.pj{background:var(--cd);border:1px solid var(--br);border-radius:12px;padding:1.5rem;transition:all .3s;position:relative;overflow:hidden}
+.pj::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),#2563eb);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.pj:hover{transform:translateY(-4px);border-color:rgba(201,168,76,.3);box-shadow:0 18px 36px rgba(0,0,0,.4)}.pj:hover::after{transform:scaleX(1)}
+.pi{width:36px;height:36px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.95rem;margin-bottom:.85rem}
+.pna{font-family:'DM Serif Display',serif;font-size:1.05rem;margin-bottom:.4rem}
+.pd{font-size:.81rem;color:var(--mu);line-height:1.7;margin-bottom:.9rem}
+.ps{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:.9rem}
+.pt{background:var(--bg3);color:var(--mu);font-size:.68rem;padding:.15rem .5rem;border-radius:4px;border:1px solid rgba(255,255,255,.05)}
+.pl{display:flex;gap:.55rem}
+.pla{font-size:.76rem;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:.25rem;font-weight:500;border:1px solid rgba(201,168,76,.25);padding:.25rem .65rem;border-radius:4px;transition:all .2s}
+.pla:hover{background:rgba(201,168,76,.08)}
+#contact{background:var(--bg)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.ab{display:inline-flex;align-items:center;gap:.5rem;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);color:#4ade80;font-size:.72rem;font-weight:600;padding:.32rem .8rem;border-radius:100px;margin-bottom:1.1rem}
+.ab span{width:6px;height:6px;background:#4ade80;border-radius:50%;animation:pu 2s infinite}
+.cd2{color:var(--mu);font-size:.9rem;line-height:1.8;margin-bottom:1.5rem}
+.cls{display:flex;flex-direction:column;gap:.75rem}
+.cl{display:flex;align-items:center;gap:.85rem;color:var(--mu);text-decoration:none;font-size:.83rem;padding:.75rem .95rem;background:var(--cd);border:1px solid var(--br);border-radius:8px;transition:all .2s}
+.cl:hover{border-color:var(--gold);color:var(--gold)}
+.ci{width:28px;height:28px;background:rgba(201,168,76,.1);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.82rem;flex-shrink:0}
+.clt strong{display:block;font-size:.8rem;color:var(--tx);font-weight:500}.clt span{font-size:.74rem}
+.cr{display:flex;flex-direction:column;gap:.75rem}
+.ic{background:var(--cd);border:1px solid var(--br);border-radius:10px;padding:1.1rem 1.3rem}
+.icl{font-size:.68rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--mu);margin-bottom:.35rem}
+.icv{font-size:.88rem;font-weight:600;color:var(--tx)}.ics{font-size:.76rem;color:var(--mu);margin-top:.18rem}
+.tr2{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.45rem}
+.tg{background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);color:var(--gl);font-size:.7rem;padding:.2rem .6rem;border-radius:100px}
+footer{background:var(--bg2);border-top:1px solid var(--br);padding:1.5rem 4rem;display:flex;align-items:center;justify-content:space-between}
+footer p{color:var(--mu);font-size:.78rem}.fl{display:flex;gap:1.4rem}.fl a{color:var(--mu);text-decoration:none;font-size:.78rem;transition:color .2s}.fl a:hover{color:var(--gold)}
+@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pu{0%,100%{opacity:1}50%{opacity:.4}}
+.fi{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.fi.v{opacity:1;transform:translateY(0)}
+@media(max-width:768px){nav{padding:.9rem 1.4rem}.nm{display:none}section{padding:3rem 1.4rem}.hero{padding:5.5rem 1.4rem 2.5rem}.hi,.ag,.cg{grid-template-columns:1fr;gap:1.8rem}.pw{order:-1}.pg{grid-template-columns:1fr}footer{flex-direction:column;gap:.9rem;padding:1.3rem;text-align:center}}
+</style>
+</head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+<nav>
+  <a href="#" class="nl">AB</a>
+  <ul class="nm">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="nc">Contact</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hi">
+    <div>
+      <div class="badge"><span></span>Open to SDE Roles · Toronto, Canada</div>
+      <h1>Anurag<br><em>Bishnoi</em></h1>
+      <p class="sub">Software Engineer · Java &amp; Spring Boot · GenAI &amp; LLM · Banking Systems</p>
+      <p class="dsc">3+ years building enterprise banking platforms at Scotiabank. I write Java, build Spring Boot microservices, and ship GenAI-powered applications. Banking domain depth meets modern engineering.</p>
+      <div class="act">
+        <a href="#projects" class="bp">View Projects</a>
+        <a href="Anurag_Bishnoi_Java_SpringBoot_Developer.pdf" download class="bs">Download Resume</a>
+      </div>
+      <div class="hl">
+        <a href="https://github.com/29rules" target="_blank">⌥ github.com/29rules</a>
+        <a href="https://linkedin.com/in/anuragbishnoi" target="_blank">in LinkedIn</a>
+        <a href="mailto:Anurag.bishnoi@scotiabank.com">✉ Email</a>
+      </div>
+    </div>
+    <div class="pw">
+      <div class="pc">
+        <img src="src/assets/profilePhoto.jpeg" alt="Anurag Bishnoi" onerror="this.src='https://raw.githubusercontent.com/29rules/portfolio-website/main/src/assets/profilePhoto.jpeg'"/>
+        <div class="po">
+          <div class="pn">Anurag Bishnoi</div>
+          <div class="pr">Senior QA Analyst @ Scotiabank · Java Developer</div>
+        </div>
+      </div>
+      <div class="sr">
+        <div class="st"><div class="sv">3+</div><div class="sl">Years at Scotiabank</div></div>
+        <div class="st"><div class="sv">40%</div><div class="sl">Test effort reduced</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about"><div class="si">
+  <div class="stg">About Me</div>
+  <h2>Banking Domain Depth.<br>Modern Engineering Skills.</h2>
+  <div class="sd"></div>
+  <div class="ag">
+    <div class="at fi">
+      <p>I'm a software professional based in Toronto with 3+ years at Scotiabank, working deep inside production banking systems — ATM networks, PINPAD hardware, eTeller wire transfer applications, and VISA/MC payment certification flows.</p>
+      <p>What makes me different: I understand how financial software behaves under production load, how API contracts break in edge cases, and what it takes to ship zero-defect code in a regulated banking environment.</p>
+      <div class="aq">"I don't just write code — I understand the systems that move real money, and I'm building the engineering skills to contribute at that layer."</div>
+      <p>Currently building Java/Spring Boot microservices, GenAI applications with OpenAI + LangChain, and full-stack projects with React. Targeting Software Engineer / Java Backend roles where banking domain knowledge is a genuine asset.</p>
+    </div>
+    <div class="fi">
+      <div class="sg"><div class="sgl">Backend</div><div class="sc"><span class="ch">Java</span><span class="ch">Spring Boot</span><span class="ch">REST APIs</span><span class="ch">Python</span><span class="ch">SQL</span><span class="ch">Microservices</span></div></div>
+      <div class="sg"><div class="sgl">AI / LLM</div><div class="sc"><span class="ch">OpenAI GPT</span><span class="ch">LangChain</span><span class="ch">RAG</span><span class="ch">Prompt Engineering</span></div></div>
+      <div class="sg"><div class="sgl">Frontend &amp; DevOps</div><div class="sc"><span class="ch">React.js</span><span class="ch">JavaScript</span><span class="ch">Docker</span><span class="ch">GitHub Actions</span><span class="ch">Nginx</span><span class="ch">CI/CD</span></div></div>
+      <div class="sg"><div class="sgl">Banking Domain</div><div class="sc"><span class="ch">ATM/PINPAD</span><span class="ch">eTeller</span><span class="ch">VISA/MC Cert</span><span class="ch">TSYS</span><span class="ch">DB2/AS400</span><span class="ch">FinSim</span></div></div>
+    </div>
+  </div>
+</div></section>
+<section id="experience"><div class="si">
+  <div class="stg">Work History</div><h2>Experience</h2><div class="sd"></div>
+  <div class="tl">
+    <div class="ti fi">
+      <div class="tt"><span class="tc">Scotiabank · Card Technology / eTeller</span><span class="td">Aug 2022 – Present</span></div>
+      <div class="tr">Senior QA Analyst · Toronto, ON</div>
+      <ul class="tb">
+        <li>Designed and developed Java/Python automation services reducing test preparation effort by 40% across multiple retail banking releases, supporting ATM, PINPAD, and eTeller systems.</li>
+        <li>Engineered backend validation scripts using CL programs and Query/400 against DB2 and AS400 job logs to enforce data integrity across dependent banking systems.</li>
+        <li>Collaborated with architects on API contracts and system-level design for VISA/MC certification across contactless, contact, and eCommerce transaction flows.</li>
+        <li>Led Change Management and production incident response; root cause analysis and post-incident documentation for enterprise banking platforms.</li>
+      </ul>
+    </div>
+    <div class="ti fi">
+      <div class="tt"><span class="tc">Scotiabank · Wealth Management</span><span class="td">Jan 2019 – Jul 2022</span></div>
+      <div class="tr">Investment Advisor Associate · Toronto, ON</div>
+      <ul class="tb"><li>Supported client portfolio administration, regulatory compliance, and cross-departmental operations across Scotiabank's internal wealth management systems.</li></ul>
+    </div>
+  </div>
+</div></section>
+<section id="projects"><div class="si">
+  <div class="stg">What I've Built</div><h2>Projects</h2><div class="sd"></div>
+  <div class="pg">
+    <div class="pj fi"><div class="pi">🤖</div><div class="pna">AI Chatbot – Gen AI Initiative</div><p class="pd">Customer-facing chatbot using OpenAI GPT API and LangChain for conversational memory. RAG pipeline grounding responses in a verified knowledge base with prompt engineering for accuracy and hallucination control.</p><div class="ps"><span class="pt">OpenAI GPT</span><span class="pt">LangChain</span><span class="pt">RAG</span><span class="pt">Python</span><span class="pt">Flask</span></div><div class="pl"><a href="https://github.com/29rules/ai-chatbot" target="_blank" class="pla">⌥ GitHub</a></div></div>
+    <div class="pj fi"><div class="pi">🌾</div><div class="pna">AgroConnect World</div><p class="pd">Full-stack B2B platform with Spring Boot REST API microservices covering auth, product catalog and order management. Containerized with Docker, deployed via GitHub Actions CI/CD on cloud VPS.</p><div class="ps"><span class="pt">Java</span><span class="pt">Spring Boot</span><span class="pt">React</span><span class="pt">MongoDB</span><span class="pt">Docker</span></div><div class="pl"><a href="https://github.com/29rules/AgroConnectWorld" target="_blank" class="pla">⌥ GitHub</a></div></div>
+    <div class="pj fi"><div class="pi">🏦</div><div class="pna">MiniBank Transaction Engine</div><p class="pd">Java + Spring Boot backend simulating real banking transaction logic — accounts, transfers, and audit trails. Production-grade banking patterns including transactional integrity and audit logging.</p><div class="ps"><span class="pt">Java</span><span class="pt">Spring Boot</span><span class="pt">REST APIs</span><span class="pt">SQL</span><span class="pt">Maven</span></div><div class="pl"><a href="https://github.com/29rules/minibank-transaction-engine" target="_blank" class="pla">⌥ GitHub</a></div></div>
+    <div class="pj fi"><div class="pi">🌐</div><div class="pna">Portfolio Website</div><p class="pd">Personal developer portfolio deployed on cloud VPS using Docker + Nginx with automated Git-based CI/CD. Mobile-first responsive design showcasing projects, skills, and resume.</p><div class="ps"><span class="pt">React</span><span class="pt">Vite</span><span class="pt">Docker</span><span class="pt">Nginx</span><span class="pt">CI/CD</span></div><div class="pl"><a href="https://github.com/29rules/portfolio-website" target="_blank" class="pla">⌥ GitHub</a><a href="https://bishnoianurag.site" target="_blank" class="pla">↗ Live</a></div></div>
+  </div>
+</div></section>
+<section id="contact"><div class="si">
+  <div class="stg">Get In Touch</div><h2>Let's Connect</h2><div class="sd"></div>
+  <div class="cg">
+    <div class="fi">
+      <div class="ab"><span></span>Open to SDE / Java Developer Roles</div>
+      <p class="cd2">Actively looking for Software Engineer and Java Backend Developer opportunities in banking, fintech, or enterprise tech in Toronto. If you're hiring or want to talk Java, Spring Boot, or GenAI — let's connect.</p>
+      <div class="cls">
+        <a href="mailto:Anurag.bishnoi@scotiabank.com" class="cl"><div class="ci">✉</div><div class="clt"><strong>Email</strong><span>Anurag.bishnoi@scotiabank.com</span></div></a>
+        <a href="https://linkedin.com/in/anuragbishnoi" target="_blank" class="cl"><div class="ci">in</div><div class="clt"><strong>LinkedIn</strong><span>linkedin.com/in/anuragbishnoi</span></div></a>
+        <a href="https://github.com/29rules" target="_blank" class="cl"><div class="ci">⌥</div><div class="clt"><strong>GitHub</strong><span>github.com/29rules</span></div></a>
+      </div>
+    </div>
+    <div class="cr fi">
+      <div class="ic"><div class="icl">Location</div><div class="icv">Toronto, Ontario, Canada</div><div class="ics">Open to hybrid / remote roles</div></div>
+      <div class="ic"><div class="icl">Target Roles</div><div class="tr2"><span class="tg">Java Developer</span><span class="tg">Software Engineer</span><span class="tg">Backend Dev</span><span class="tg">SDET</span></div></div>
+      <div class="ic"><div class="icl">Industries</div><div class="tr2"><span class="tg">Banking</span><span class="tg">Fintech</span><span class="tg">Enterprise Tech</span></div></div>
+    </div>
+  </div>
+</div></section>
+<footer>
+  <p>© 2025 Anurag Bishnoi · Toronto, Canada</p>
+  <div class="fl"><a href="https://github.com/29rules" target="_blank">GitHub</a><a href="https://linkedin.com/in/anuragbishnoi" target="_blank">LinkedIn</a><a href="mailto:Anurag.bishnoi@scotiabank.com">Email</a></div>
+</footer>
+<script>
+const o=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('v')}),{threshold:.1});
+document.querySelectorAll('.fi').forEach(el=>o.observe(el));
+const ss=document.querySelectorAll('section[id]'),ls=document.querySelectorAll('.nm a');
+window.addEventListener('scroll',()=>{let c='';ss.forEach(s=>{if(window.scrollY>=s.offsetTop-100)c=s.id});ls.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+c?'var(--gold)':''})});
+</script>
 </body>
-
 </html>
