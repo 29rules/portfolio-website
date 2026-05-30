@@ -6,20 +6,21 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Hero = () => {
   return (
     <div id='home' className='hero'>
-      <img src={profilePhoto} alt="Profile Photo" />
+      <img src={profilePhoto} alt="Anurag Bishnoi - Java Full Stack Developer" />
       <h1>
-        <span>I'm Anurag Bishnoi,</span> Full Stack Developer based in Canada.
+        <span>I'm Anurag Bishnoi,</span> Java Backend &amp; Full Stack Developer based in Toronto, Canada.
       </h1>
       <p>
-        I'm a Full Stack Developer based in Canada, passionate about building
-        modern, scalable web applications with clean code and great user experiences.
+        5+ years of experience building scalable, production-grade applications at Scotiabank.
+        Passionate about clean code, REST APIs, and modern web technologies.
+        Currently targeting SDE1 roles in the tech industry.
       </p>
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink>
         </div>
         <div className="hero-resume">
-          <a href="Anurag_Bishnoi_FullStack_Resume.pdf" download="Anurag_Bishnoi_Resume.pdf" >My Resume</a>
+          <a href="Anurag_Bishnoi_FullStack_Resume.pdf" download="Anurag_Bishnoi_Resume.pdf">My Resume</a>
         </div>
       </div>
     </div>
