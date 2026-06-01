@@ -12,7 +12,7 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 4rem;background:rgba(13,15,20,0.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--br)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 4rem;background:rgba(13,15,20,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--br)}
 .nl{font-family:'DM Serif Display',serif;font-size:1.3rem;color:var(--gold);text-decoration:none}
 .nm{display:flex;gap:2rem;list-style:none}.nm a{color:var(--mu);text-decoration:none;font-size:.875rem;font-weight:500;transition:color .2s}.nm a:hover{color:var(--gold)}
 .nc{background:var(--gold)!important;color:var(--bg)!important;padding:.38rem 1rem;border-radius:4px;font-weight:600!important}
@@ -65,7 +65,7 @@ h2{font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);color
 .tb li{font-size:.83rem;color:var(--mu);padding-left:1rem;position:relative;line-height:1.65}
 .tb li::before{content:'▸';position:absolute;left:0;color:var(--gold);font-size:.65rem;top:3px}
 #projects{background:var(--bg2)}
-.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
 .pj{background:var(--cd);border:1px solid var(--br);border-radius:12px;padding:1.5rem;transition:all .3s;position:relative;overflow:hidden}
 .pj::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),#2563eb);transform:scaleX(0);transform-origin:left;transition:transform .3s}
 .pj:hover{transform:translateY(-4px);border-color:rgba(201,168,76,.3);box-shadow:0 18px 36px rgba(0,0,0,.4)}.pj:hover::after{transform:scaleX(1)}
@@ -74,7 +74,7 @@ h2{font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);color
 .pd{font-size:.81rem;color:var(--mu);line-height:1.7;margin-bottom:.9rem}
 .ps{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:.9rem}
 .pt{background:var(--bg3);color:var(--mu);font-size:.68rem;padding:.15rem .5rem;border-radius:4px;border:1px solid rgba(255,255,255,.05)}
-.pl{display:flex;gap:.55rem}
+.pl{display:flex;gap:.55rem;flex-wrap:wrap}
 .pla{font-size:.76rem;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:.25rem;font-weight:500;border:1px solid rgba(201,168,76,.25);padding:.25rem .65rem;border-radius:4px;transition:all .2s}
 .pla:hover{background:rgba(201,168,76,.08)}
 #contact{background:var(--bg)}
@@ -120,12 +120,12 @@ footer p{color:var(--mu);font-size:.78rem}.fl{display:flex;gap:1.4rem}.fl a{colo
       <p class="dsc">3+ years building enterprise banking platforms at Scotiabank. I write Java, build Spring Boot microservices, and ship GenAI-powered applications. Banking domain depth meets modern engineering.</p>
       <div class="act">
         <a href="#projects" class="bp">View Projects</a>
-        <a href="Anurag_Bishnoi_Java_SpringBoot_Developer.pdf" download class="bs">Download Resume</a>
+        <a href="https://raw.githubusercontent.com/29rules/portfolio-website/main/public/Anurag_Bishnoi_Java_SpringBoot_Developer.pdf" target="_blank" class="bs">Download Resume</a>
       </div>
       <div class="hl">
-        <a href="https://github.com/29rules" target="_blank">⌥ github.com/29rules</a>
+        <a href="https://github.com/29rules" target="_blank">&#9003; github.com/29rules</a>
         <a href="https://linkedin.com/in/anuragbishnoi" target="_blank">in LinkedIn</a>
-        <a href="mailto:Anurag.bishnoi@scotiabank.com">✉ Email</a>
+        <a href="mailto:anuragbishnoi8@gmail.com">&#9993; Email</a>
       </div>
     </div>
     <div class="pw">
@@ -185,10 +185,10 @@ footer p{color:var(--mu);font-size:.78rem}.fl{display:flex;gap:1.4rem}.fl a{colo
 <section id="projects"><div class="si">
   <div class="stg">What I've Built</div><h2>Projects</h2><div class="sd"></div>
   <div class="pg">
-    <div class="pj fi"><div class="pi">🤖</div><div class="pna">AI Chatbot – Gen AI Initiative</div><p class="pd">Customer-facing chatbot using OpenAI GPT API and LangChain for conversational memory. RAG pipeline grounding responses in a verified knowledge base with prompt engineering for accuracy and hallucination control.</p><div class="ps"><span class="pt">OpenAI GPT</span><span class="pt">LangChain</span><span class="pt">RAG</span><span class="pt">Python</span><span class="pt">Flask</span></div><div class="pl"><a href="https://github.com/29rules/ai-chatbot" target="_blank" class="pla">⌥ GitHub</a></div></div>
-    <div class="pj fi"><div class="pi">🌾</div><div class="pna">AgroConnect World</div><p class="pd">Full-stack B2B platform with Spring Boot REST API microservices covering auth, product catalog and order management. Containerized with Docker, deployed via GitHub Actions CI/CD on cloud VPS.</p><div class="ps"><span class="pt">Java</span><span class="pt">Spring Boot</span><span class="pt">React</span><span class="pt">MongoDB</span><span class="pt">Docker</span></div><div class="pl"><a href="https://github.com/29rules/AgroConnectWorld" target="_blank" class="pla">⌥ GitHub</a></div></div>
-    <div class="pj fi"><div class="pi">🏦</div><div class="pna">MiniBank Transaction Engine</div><p class="pd">Java + Spring Boot backend simulating real banking transaction logic — accounts, transfers, and audit trails. Production-grade banking patterns including transactional integrity and audit logging.</p><div class="ps"><span class="pt">Java</span><span class="pt">Spring Boot</span><span class="pt">REST APIs</span><span class="pt">SQL</span><span class="pt">Maven</span></div><div class="pl"><a href="https://github.com/29rules/minibank-transaction-engine" target="_blank" class="pla">⌥ GitHub</a></div></div>
-    <div class="pj fi"><div class="pi">🌐</div><div class="pna">Portfolio Website</div><p class="pd">Personal developer portfolio deployed on cloud VPS using Docker + Nginx with automated Git-based CI/CD. Mobile-first responsive design showcasing projects, skills, and resume.</p><div class="ps"><span class="pt">React</span><span class="pt">Vite</span><span class="pt">Docker</span><span class="pt">Nginx</span><span class="pt">CI/CD</span></div><div class="pl"><a href="https://github.com/29rules/portfolio-website" target="_blank" class="pla">⌥ GitHub</a><a href="https://bishnoianurag.site" target="_blank" class="pla">↗ Live</a></div></div>
+    <div class="pj fi"><div class="pi">&#129302;</div><div class="pna">AI Chatbot – Agronexus</div><p class="pd">Production RAG chatbot for Agronexus Trading. Built with OpenAI GPT, LangChain, and FAISS vector search. Answers buyer questions about products, pricing, and shipping from a custom knowledge base. Deployed on Render + Vercel.</p><div class="ps"><span class="pt">OpenAI GPT</span><span class="pt">LangChain</span><span class="pt">RAG</span><span class="pt">Python</span><span class="pt">Flask</span><span class="pt">FAISS</span></div><div class="pl"><a href="https://github.com/29rules/ai-chatbot" target="_blank" class="pla">&#9003; GitHub</a><a href="https://agronexus-chatbot.vercel.app" target="_blank" class="pla">&#8599; Live Demo</a></div></div>
+    <div class="pj fi"><div class="pi">&#127806;</div><div class="pna">AgroConnect World</div><p class="pd">Full-stack B2B platform connecting spice suppliers with international buyers. Microservices backend with Spring Boot REST APIs covering auth, product catalog, and order management. Containerized with Docker, deployed via GitHub Actions CI/CD.</p><div class="ps"><span class="pt">Java</span><span class="pt">Spring Boot</span><span class="pt">React</span><span class="pt">MongoDB</span><span class="pt">Docker</span><span class="pt">GitHub Actions</span></div><div class="pl"><a href="https://github.com/29rules/AgroConnectWorld" target="_blank" class="pla">&#9003; GitHub</a></div></div>
+    <div class="pj fi"><div class="pi">&#127974;</div><div class="pna">MiniBank Transaction Engine</div><p class="pd">Java + Spring Boot backend simulating real banking transaction logic — accounts, transfers, and audit trails. Demonstrates production-grade banking patterns including transactional integrity, audit logging, and REST API design.</p><div class="ps"><span class="pt">Java</span><span class="pt">Spring Boot</span><span class="pt">REST APIs</span><span class="pt">SQL</span><span class="pt">Maven</span></div><div class="pl"><a href="https://github.com/29rules/minibank-transaction-engine" target="_blank" class="pla">&#9003; GitHub</a></div></div>
+    <div class="pj fi"><div class="pi">&#127760;</div><div class="pna">Portfolio Website</div><p class="pd">Personal developer portfolio deployed on Netlify. Mobile-first responsive design showcasing projects, skills, and resume. Clean HTML/CSS/JS with no build step — instant deployment and zero maintenance overhead.</p><div class="ps"><span class="pt">HTML</span><span class="pt">CSS</span><span class="pt">JavaScript</span><span class="pt">Netlify</span></div><div class="pl"><a href="https://github.com/29rules/portfolio-website" target="_blank" class="pla">&#9003; GitHub</a><a href="https://bishnoianurag.site" target="_blank" class="pla">&#8599; Live</a></div></div>
   </div>
 </div></section>
 <section id="contact"><div class="si">
@@ -198,9 +198,9 @@ footer p{color:var(--mu);font-size:.78rem}.fl{display:flex;gap:1.4rem}.fl a{colo
       <div class="ab"><span></span>Open to SDE / Java Developer Roles</div>
       <p class="cd2">Actively looking for Software Engineer and Java Backend Developer opportunities in banking, fintech, or enterprise tech in Toronto. If you're hiring or want to talk Java, Spring Boot, or GenAI — let's connect.</p>
       <div class="cls">
-        <a href="mailto:Anurag.bishnoi@scotiabank.com" class="cl"><div class="ci">✉</div><div class="clt"><strong>Email</strong><span>Anurag.bishnoi@scotiabank.com</span></div></a>
+        <a href="mailto:anuragbishnoi8@gmail.com" class="cl"><div class="ci">&#9993;</div><div class="clt"><strong>Email</strong><span>anuragbishnoi8@gmail.com</span></div></a>
         <a href="https://linkedin.com/in/anuragbishnoi" target="_blank" class="cl"><div class="ci">in</div><div class="clt"><strong>LinkedIn</strong><span>linkedin.com/in/anuragbishnoi</span></div></a>
-        <a href="https://github.com/29rules" target="_blank" class="cl"><div class="ci">⌥</div><div class="clt"><strong>GitHub</strong><span>github.com/29rules</span></div></a>
+        <a href="https://github.com/29rules" target="_blank" class="cl"><div class="ci">&#9003;</div><div class="clt"><strong>GitHub</strong><span>github.com/29rules</span></div></a>
       </div>
     </div>
     <div class="cr fi">
@@ -211,8 +211,8 @@ footer p{color:var(--mu);font-size:.78rem}.fl{display:flex;gap:1.4rem}.fl a{colo
   </div>
 </div></section>
 <footer>
-  <p>© 2025 Anurag Bishnoi · Toronto, Canada</p>
-  <div class="fl"><a href="https://github.com/29rules" target="_blank">GitHub</a><a href="https://linkedin.com/in/anuragbishnoi" target="_blank">LinkedIn</a><a href="mailto:Anurag.bishnoi@scotiabank.com">Email</a></div>
+  <p>&#169; 2026 Anurag Bishnoi · Toronto, Canada</p>
+  <div class="fl"><a href="https://github.com/29rules" target="_blank">GitHub</a><a href="https://linkedin.com/in/anuragbishnoi" target="_blank">LinkedIn</a><a href="mailto:anuragbishnoi8@gmail.com">Email</a></div>
 </footer>
 <script>
 const o=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('v')}),{threshold:.1});
